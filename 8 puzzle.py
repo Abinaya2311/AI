@@ -31,7 +31,7 @@ def a_star(start, goal):
     return None
 
 # Example usage
-start = [1, 2, 3, 4, 5, 6, 7, 0, 8]
+start = [1, 2, 3, 5, 6, 0, 7, 8, 4]
 goal = [1, 2, 3, 4, 5, 6, 7, 8, 0]
 solution = a_star(start, goal)
 for step in solution:
