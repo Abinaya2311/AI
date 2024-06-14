@@ -6,8 +6,8 @@ can_fly(sparrow).
 cannot_fly(penguin).
 cannot_fly(ostrich).
 
-CanFlY(Bird) :- Bird(Bird), \+ CannotFly(Bird).
+can_fly(Bird) :- bird(Bird), \+ cannot_fly(Bird).
 
-% Query If A Bird Can Fly
-CanBirdFly(Bird, 'Yes') :- CanFly(Bird), !.
-CanBirdFly(_, 'No').
+% Query if a bird can fly
+can_bird_fly(Bird, 'Yes') :- can_fly(Bird), !.
+can_bird_fly(_, 'No').
